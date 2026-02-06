@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Female AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="title">My Personal AI Assistant</h2>
+
+<div id="loginBox">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="chatBox" style="display:none;">
+  <img src="https://i.imgur.com/4M34hi2.png" id="avatar">
+  <p id="assistantName">Shejal</p>
+
+  <div id="chat"></div>
+
+  <input id="userInput" placeholder="कुछ लिखो..." />
+  <button onclick="send()">Send</button>
+</div>
+
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
