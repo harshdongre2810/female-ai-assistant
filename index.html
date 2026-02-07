@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <title>Female AI Assistant</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>My Personal AI Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase CDN (FINAL) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
 </head>
+
 <body>
 
-<h2 id="title">My Personal AI Assistant</h2>
+  <h2 style="text-align:center;">My Personal AI Assistant</h2>
 
-<div id="loginBox">
-  <input type="email" id="email" placeholder="Email">
-  <input type="password" id="password" placeholder="Password">
-  <button id="sendBtn">Send</button>
-</div>
+  <!-- LOGIN BOX -->
+  <div id="loginBox">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="loginBtn">Login</button>
+    <p id="loginStatus"></p>
+  </div>
 
-<div id="chatBox" style="display:none;">
-  <img src="https://i.imgur.com/4M34hi2.png" id="avatar">
-  <p id="assistantName">Shejal</p>
+  <!-- CHAT BOX -->
+  <div id="chatBox" style="display:none;">
+    <div id="messages" style="height:300px; overflow:auto; border:1px solid #ccc; padding:10px;"></div>
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button id="sendBtn">Send</button>
+  </div>
 
-  <div id="chat"></div>
+  <!-- Firebase Config -->
+  <script src="firebase.js"></script>
 
-  <input id="userInput" placeholder="कुछ लिखो..." />
-  <button id="loginBtn">Login</button>
-</div>
+  <!-- Main Logic -->
+  <script src="script.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-<script src="firebase.js"></script>
 </body>
 </html>
