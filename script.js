@@ -74,8 +74,7 @@ async function send() {
     messages.innerHTML += `<p><b>Shejal:</b> ${aiReply}</p>`;
     messages.scrollTop = messages.scrollHeight;
 
-  } catch (err) {
-    messages.innerHTML += `<p><b>Shejal:</b> Kuch error aa gaya 😢</p>`;
-    console.error(err);
-  }
+ } catch (err) {
+  messages.innerHTML += `<p><b>Shejal:</b> Error: ${err.message}</p>`;
+  console.error("FULL ERROR:", err);
 }
