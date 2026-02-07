@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Personal AI Assistant</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Style -->
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Firebase CDN (FINAL) -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <meta charset="UTF-8">
+  <title>My Female AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <h2 style="text-align:center;">My Personal AI Assistant</h2>
+<h1>My Personal AI Assistant</h1>
 
-  <!-- LOGIN BOX -->
-  <div id="loginBox">
-    <input type="email" id="email" placeholder="Email" />
-    <input type="password" id="password" placeholder="Password" />
-    <button id="loginBtn">Login</button>
-    <p id="loginStatus"></p>
-  </div>
+<div id="loginBox">
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button id="loginBtn">Login / Sign Up</button>
+  <p id="loginStatus"></p>
+</div>
 
-  <!-- CHAT BOX -->
-  <div id="chatBox" style="display:none;">
-    <div id="messages" style="height:300px; overflow:auto; border:1px solid #ccc; padding:10px;"></div>
-    <input type="text" id="userInput" placeholder="Type your message..." />
-    <button id="sendBtn">Send</button>
-  </div>
+<div id="chatBox" style="display:none;">
+  <img id="avatar" src="https://i.imgur.com/QrKJpQp.png" alt="Female Avatar">
+  <div id="messages"></div>
+  <input id="userInput" placeholder="Type your message">
+  <button id="sendBtn">Send</button>
+</div>
 
-  <!-- Firebase Config -->
-  <script src="firebase.js"></script>
-
-  <!-- Main Logic -->
-  <script src="script.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
